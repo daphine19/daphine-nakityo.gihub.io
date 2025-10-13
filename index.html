@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Daphine Belindah Nakityo - Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -15,17 +15,17 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f9f9f9;
+            background: #fef5f9;
         }
 
         /* Navigation */
         nav {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #f5e6e8 100%);
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(219,29,96,0.1);
         }
 
         nav .container {
@@ -38,7 +38,7 @@
         }
 
         nav .logo {
-            color: white;
+            color: #d81b60;
             font-size: 1.5rem;
             font-weight: bold;
         }
@@ -50,19 +50,19 @@
         }
 
         nav a {
-            color: white;
+            color: #666;
             text-decoration: none;
             transition: opacity 0.3s;
         }
 
         nav a:hover {
-            opacity: 0.8;
+            color: #d81b60;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            color: #333;
             padding: 6rem 20px;
             text-align: center;
             min-height: 500px;
@@ -80,14 +80,14 @@
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            opacity: 0.95;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
 
         .cta-button {
             display: inline-block;
-            background: white;
-            color: #667eea;
+            background: #d81b60;
+            color: white;
             padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
@@ -98,7 +98,7 @@
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(216,27,96,0.3);
         }
 
         /* Container */
@@ -117,7 +117,7 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            color: #333;
+            color: #d81b60;
         }
 
         /* About Section */
@@ -135,7 +135,7 @@
         .about-text h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #667eea;
+            color: #ff1493;
         }
 
         .about-text p {
@@ -145,7 +145,7 @@
 
         /* Projects Section */
         .projects {
-            background: #f9f9f9;
+            background: #fef5f9;
         }
 
         .projects-grid {
@@ -158,22 +158,23 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(219,29,96,0.08);
             transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #f8bbd0;
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 30px rgba(219,29,96,0.12);
         }
 
         .project-image {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
             height: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #d81b60;
             font-size: 3rem;
         }
 
@@ -195,14 +196,14 @@
 
         .project-link {
             display: inline-block;
-            color: #667eea;
+            color: #ff1493;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         .project-link:hover {
-            color: #764ba2;
+            color: #d81b60;
         }
 
         /* Skills Section */
@@ -217,20 +218,20 @@
         }
 
         .skill-item {
-            background: #f9f9f9;
+            background: #fef5f9;
             padding: 2rem;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #ff69b4;
         }
 
         .skill-item h3 {
-            color: #667eea;
+            color: #ff1493;
             margin-bottom: 0.5rem;
         }
 
         /* Contact Section */
         .contact {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
             color: white;
             text-align: center;
         }
@@ -258,12 +259,12 @@
 
         .contact-links a:hover {
             background: white;
-            color: #667eea;
+            color: #ff1493;
         }
 
         /* Footer */
         footer {
-            background: #333;
+            background: #c2185b;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -310,7 +311,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">Your Name</div>
+            <div class="logo">Daphine Belindah Nakityo</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -325,7 +326,7 @@
     <section class="hero" id="home">
         <div>
             <h1>Welcome to My Portfolio</h1>
-            <p>Full-Stack Developer | Designer | Innovator</p>
+            <p> Project Manager | Front End developer | Business Analyst | </p></p>
             <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
     </section>
@@ -336,11 +337,11 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div>
-                    <h3>Hi, I'm [Your Name]</h3>
-                    <p>I'm a passionate developer with expertise in creating beautiful and functional web applications. I love turning ideas into reality and solving complex problems with elegant solutions.</p>
-                    <p>With experience in front-end and back-end development, I'm committed to delivering high-quality projects that exceed expectations. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.</p>
+                    <h3>Hi, I'm Daphine</h3>
+                    <p> I am currently working as an IT infrastructure Engineer, recently completed my degree in Business Information technology where i developed various skills including project management, business analysis, data visualisation and front end developement. I am passionate about innovative solutions that help people around the world in diffferent remits </p>
+                    <p>As part of my current role, I have developed knowledge in different domains including automation, meeting room technology, mobile service management, virtual reality and successfully run different projects to help improve user experiences following the ITIL service management principles. I am looking to pivot my career either into data,business analysis, project management and currently enjoying learning more about front end development.</p>
                 </div>
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; height: 300px;"></div>
+                <div style="background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%); border-radius: 10px; height: 300px;"></div>
             </div>
         </div>
     </section>
@@ -350,21 +351,21 @@
         <div class="container">
             <h2>My Projects</h2>
             <div class="projects-grid">
+                 <div class="project-card">
+                    <div class="project-image">💻</div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p> Data visualisation platform. This was my final year project aimed at building a data visualisation platform that can be used by sports men that suffer from chronic back pain and use wearable devices to track their back movement in order to have accurate ish data that they can show case to their physicians. 
+                            The app was built using python, and stremalit as the data visualisation software together with a few other javascript libraries used for data visualisation ie ds4. I achieved an overall score of 79% on this piece of work.</p>
+                        <a href="#" class="https://github.com/daphine19/dissertation-code">View Project →</a>
+                    </div>
+                </div>
                 <div class="project-card">
                     <div class="project-image">🚀</div>
                     <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A brief description of your project and the technologies you used to build it.</p>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">💻</div>
-                    <div class="project-info">
                         <h3>Project Two</h3>
-                        <p>Another amazing project showcasing your skills and creativity in web development.</p>
-                        <a href="#" class="project-link">View Project →</a>
+                        <p>Parcel Tracking web app. This was an app built for learning back end using php and css/js/html for front end. The intention of the app was to mimic a normal tracking website like dhl or dpd.</p>
+                        <a href="#" class="https://github.com/daphine19/WP-Parcel-tracking-web-app">View Project →</a>
                     </div>
                 </div>
 
@@ -372,8 +373,8 @@
                     <div class="project-image">🎨</div>
                     <div class="project-info">
                         <h3>Project Three</h3>
-                        <p>Describe your third project and highlight the key features and achievements.</p>
-                        <a href="#" class="project-link">View Project →</a>
+                        <p>Calculator and journal entry app. First uni project, built using html, css and java and javascript.The app has a calculator and a journal entry which allows for user to enter entries and have a random one generated for them. I acheved 81% on this piece of work.   </p>
+                        <a href="#" class="https://github.com/daphine19/APP-journal-and-calculator-website">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -386,20 +387,20 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                    <h3>Front End Development</h3>
+                    <p>HTML, CSS, Javascript, React</p>
                 </div>
                 <div class="skill-item">
-                    <h3>Backend</h3>
-                    <p>Node.js, Python, MongoDB, PostgreSQL</p>
+                    <h3>Backend, tools and platforms</h3>
+                    <p>Python, Node.js, VS code, </p>
                 </div>
                 <div class="skill-item">
-                    <h3>Tools & Platforms</h3>
-                    <p>Git, GitHub, Docker, AWS, VS Code</p>
+                    <h3>Data skills  </h3>
+                    <p>Data visualisation (powerbi), kaggle, sql, python,streamlit, google colab </p>
                 </div>
                 <div class="skill-item">
-                    <h3>Design</h3>
-                    <p>UI/UX Design, Figma, Responsive Design</p>
+                    <h3>Other skills </h3>
+                    <p>Project management, business analysis, vendor management, ITIL service management, automation </p>
                 </div>
             </div>
         </div>
@@ -411,17 +412,16 @@
             <h2>Let's Connect</h2>
             <p>Feel free to reach out to me for any opportunities or collaborations</p>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="mailto:daphinebelindah@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/daphine-belindah-nakityo/" target="_blank">LinkedIn</a>
+                <a href="https://https://github.com/daphine19" target="_blank">GitHub</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Daphine Belindah Nakityo. All rights reserved.</p>
     </footer>
 </body>
 </html>
