@@ -206,8 +206,7 @@
         .project-link:hover {
             color: #d81b60;
         }
-
-        /* Skills Section */
+        * Skills Section */
         .skills {
             background: white;
         }
@@ -228,6 +227,69 @@
         .skill-item h3 {
             color: #ff1493;
             margin-bottom: 0.5rem;
+        }
+
+        /* Certifications Section */
+        .certifications {
+            background: #fef5f9;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .cert-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(219,29,96,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #f8bbd0;
+            text-align: center;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(219,29,96,0.12);
+        }
+
+        .cert-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cert-card h3 {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cert-issuer {
+            color: #d81b60;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .cert-date {
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .cert-link {
+            display: inline-block;
+            color: #ff1493;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .cert-link:hover {
+            color: #d81b60;
         }
 
         /* Contact Section */
@@ -340,6 +402,7 @@
                 <div>
                     <h3>Hi, I'm Daphine</h3>
                     <p> I am currently working as an IT infrastructure Engineer, recently completed my degree in Business Information technology where i developed various skills including project management, business analysis, data visualisation and front end developement. I am passionate about innovative solutions that help people around the world in diffferent remits </p>
+                    <p></p>
                     <p>As part of my current role, I have developed knowledge in different domains including automation, meeting room technology, mobile service management, virtual reality and successfully run different projects to help improve user experiences following the ITIL service management principles. I am looking to pivot my career either into data,business analysis, project management and currently enjoying learning more about front end development.</p>
                 </div>
                 <div style="border-radius: 10px; overflow: hidden; height: 300px;">
@@ -384,26 +447,70 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+   <!-- Skills & Certifications Section -->
     <section class="skills" id="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Front End Development</h3>
-                    <p>HTML, CSS, Javascript, React</p>
+            <h2>Skills & Certifications</h2>
+            <div class="skills-certs-container">
+                <!-- Skills Column -->
+                <div class="skills-column">
+                    <h3 class="section-subtitle">Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <h3>Skill Category One</h3>
+                            <p>Add your skills in this area</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Skill Category Two</h3>
+                            <p>Add your skills in this area</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Skill Category Three</h3>
+                            <p>Add your skills in this area</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Skill Category Four</h3>
+                            <p>Add your skills in this area</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <h3>Backend, tools and platforms</h3>
-                    <p>Python, Node.js, VS code, </p>
-                </div>
-                <div class="skill-item">
-                    <h3>Data skills  </h3>
-                    <p>Data visualisation (powerbi), kaggle, sql, python,streamlit, google colab </p>
-                </div>
-                <div class="skill-item">
-                    <h3>Other skills </h3>
-                    <p>Project management, business analysis, vendor management, ITIL service management, automation </p>
+
+                <!-- Certifications Column -->
+                <div class="certs-column">
+                    <h3 class="section-subtitle">Certifications</h3>
+                    <div class="certifications-list">
+                        <div class="cert-card">
+                            <div class="cert-icon">🏆</div>
+                            <h3>Certification Name</h3>
+                            <p class="cert-issuer">Issued by: Organization Name</p>
+                            <p class="cert-date">Date Obtained: Month Year</p>
+                            <a href="#" class="cert-link" target="_blank">View Credential →</a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">📜</div>
+                            <h3>Certification Name</h3>
+                            <p class="cert-issuer">Issued by: Organization Name</p>
+                            <p class="cert-date">Date Obtained: Month Year</p>
+                            <a href="#" class="cert-link" target="_blank">View Credential →</a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">🎓</div>
+                            <h3>Certification Name</h3>
+                            <p class="cert-issuer">Issued by: Organization Name</p>
+                            <p class="cert-date">Date Obtained: Month Year</p>
+                            <a href="#" class="cert-link" target="_blank">View Credential →</a>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">✨</div>
+                            <h3>Certification Name</h3>
+                            <p class="cert-issuer">Issued by: Organization Name</p>
+                            <p class="cert-date">Date Obtained: Month Year</p>
+                            <a href="#" class="cert-link" target="_blank">View Credential →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -417,7 +524,7 @@
             <div class="contact-links">
                 <a href="mailto:daphinebelindah@gmail.com">Email</a>
                 <a href="https://www.linkedin.com/in/daphine-belindah-nakityo/" target="_blank">LinkedIn</a>
-                <a href="https:// https://github.com/daphine19" target="_blank">GitHub</a>
+                <a href="https://github.com/daphine19" target="_blank">GitHub</a>
             </div>
         </div>
     </section>
